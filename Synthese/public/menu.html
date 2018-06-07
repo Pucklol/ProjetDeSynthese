@@ -2,39 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Menu</title>
+    <title>Crock'n Mouth</title>
     <link href="./css/styleProj.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=latin-ext" rel="stylesheet">
 </head>
 <body>
-    <header>
-            <nav>
-                <ul class="menu">
+<header>
+    <nav class="navMenu">
+        <ul class="menu">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li class="hasSub">
+                <a href="#">Nos Menus</a>
+                <ul class="submenu">
                     <li>
-                        <a href="#">Home</a>
+                        <a href="#">
+                            <img src="images/021-burger-3.png" class="imgMenu">
+
+                            <span class="spanMenu">Menu</span>
+                        </a>
                     </li>
-                    <li class="hasSub">
-                        <a href="#">Nos Menus</a>
-                        <ul class="submenu">
-                            <li><a href="#">Menu</a></li>
-                            <li><a href="#">Burger</a></li>
-                            <li><a href="#">Dessert</a></li>
-                            <li><a href="#">Boisson</a></li>
-                            <li><a href="#">Sauce</a></li>
-                        </ul>
+                    <li>
+                        <a href="#">
+                            <img src="images/047-burger.png" class="imgMenu">
+                            <span class="spanMenu">Burger</span>
+                        </a>
                     </li>
-                    <li class="hasSub">
-                        <a href="#">Connexion</a>
-                       <!-- <ul class="submenu">
-                            <li><a href="#">Lien enfant</a></li>
-                        </ul>
-                    </li>-->
+                    <li>
+                        <a href="#">
+                            <img src="images/030-frappe.png" class="imgMenu">
+                            <span class="spanMenu">Dessert</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/050-soda.png" class="imgMenu">
+                            <span class="spanMenu">Boisson</span>
+                        </a>
+                    </li>
                 </ul>
-            </nav>
-    </header>
-    <div class="sousMenu">
-        TEst
-    </div>
+            </li>
+            <li class="hasSub">
+                <a href="#">Connexion</a>
+                <!-- <ul class="submenu">
+                     <li><a href="#">Lien enfant</a></li>
+                 </ul>
+             </li>-->
+        </ul>
+    </nav>
+</header>
+<div class="sousMenu">
+    TEst
+</div>
 
 </body>
 </html>

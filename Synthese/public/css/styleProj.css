@@ -1,6 +1,14 @@
 body {
     font-size: medium;
 }
+.corp{
+    background-color: brown;
+    width: 60%;
+    height: 40%;
+    margin-top: 100px;
+    margin: auto;
+    border-radius: 7px;
+}
 
 html, body {
     padding: 0;
@@ -26,6 +34,7 @@ header {
     text-decoration: none;
     font-size: 20px;
     color: white;
+
 }
 
 .sousMenu {
@@ -54,6 +63,18 @@ nav {
     position: relative;
     border-radius: 7px;
 }
+.spanMenu{
+    opacity:0;
+    transition: opacity 0.2s;
+}
+.imgMenu{
+    width: 50px;
+    height: 50px;
+}
+.imgMenu:hover + .spanMenu{
+    opacity:1;
+}
+
 nav > .menu {
     list-style: none;
     padding: 0;
