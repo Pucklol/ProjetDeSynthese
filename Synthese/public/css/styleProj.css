@@ -64,15 +64,37 @@ nav {
     border-radius: 7px;
 }
 .spanMenu{
-    opacity:0;
+    display:none;
     transition: opacity 0.2s;
-}
-.imgMenu{
     width: 50px;
     height: 50px;
+    font-size: 16px;
 }
-.imgMenu:hover + .spanMenu{
+.imgMenu > a > img{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin:auto;
+}
+.imgMenu:hover > a > span{
+    color:black;
     opacity:1;
+    display:block;
+    transition: opacity 0.2s;
+    width: 50px;
+    height: 50px;
+    margin:auto;
+
+}
+.imgMenu:hover >a >img{
+    display:none;
+}
+.imgMenu{
+    width: 100%;
+    height: 15vh;
+}
+.submenu >li{
+    vertical-align: top;
 }
 
 nav > .menu {
@@ -114,7 +136,11 @@ nav > .menu > li.hasSub > ul.submenu > li > a {
     margin: 0 10px;
 
 }
+nav > .menu > li.hasSub > ul.submenu {
+
+    font-size:0px;
+}
 nav > .menu > li.hasSub:hover > ul.submenu {
     display: inline-block;
-    font-size:0px;
+
 }

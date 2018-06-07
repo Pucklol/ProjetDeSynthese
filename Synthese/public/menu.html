@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Crock'n Mouth</title>
-    <link href="./css/styleProj.css" rel="stylesheet">
+    <link href="./css/styleProj.css?v=<?=time()?>" rel="stylesheet" >
+
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=latin-ext" rel="stylesheet">
 </head>
 <body>
@@ -17,38 +18,42 @@
                 <a href="#">Nos Menus</a>
                 <ul class="submenu">
                     <li>
-                        <a href="#">
-                            <img src="images/021-burger-3.png" class="imgMenu">
-
-                            <span class="spanMenu">Menu</span>
-                        </a>
+                        <div class="imgMenu">
+                            <a href="#">
+                                <img src="images/021-burger-3.png">
+                                <span class="spanMenu">Menu</span>
+                            </a>
+                        </div>
                     </li>
                     <li>
-                        <a href="#">
-                            <img src="images/047-burger.png" class="imgMenu">
-                            <span class="spanMenu">Burger</span>
-                        </a>
+                        <div class="imgMenu">
+                            <a href="#">
+                                <img src="images/047-burger.png">
+                                <span class="spanMenu">Burger</span>
+                            </a>
+                        </div>
                     </li>
                     <li>
-                        <a href="#">
-                            <img src="images/030-frappe.png" class="imgMenu">
-                            <span class="spanMenu">Dessert</span>
-                        </a>
+                        <div class="imgMenu">
+                            <a href="#">
+                                <img src="images/030-frappe.png">
+                                <span class="spanMenu">Dessert</span>
+                            </a>
+                        </div>
                     </li>
                     <li>
-                        <a href="#">
-                            <img src="images/050-soda.png" class="imgMenu">
-                            <span class="spanMenu">Boisson</span>
-                        </a>
+                        <div class="imgMenu">
+                            <a href="#">
+                                <img src="images/050-soda.png" class="imgMenu">
+                                <span class="spanMenu">Boisson</span>
+                            </a>
+                        </div>
                     </li>
                 </ul>
             </li>
             <li class="hasSub">
                 <a href="#">Connexion</a>
-                <!-- <ul class="submenu">
-                     <li><a href="#">Lien enfant</a></li>
-                 </ul>
-             </li>-->
+            </li>
         </ul>
     </nav>
 </header>
