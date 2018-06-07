@@ -1,0 +1,99 @@
+body {
+    font-size: medium;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    font-family: "Roboto";
+}
+
+header {
+    height: 80px;
+    background-color: #FF4500;
+    text-align: center;
+    margin: auto;
+    border-radius: 7px;
+    width: 60%;
+    z-index: 1;
+    margin-bottom: 20px;
+}
+
+.menu a:hover {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+.sousMenu {
+    margin-top: 120px;
+    background-color: #FF4500;
+    width: 60px;
+    text-align: center;
+    border-radius: 7px;
+    margin: auto;
+    display: none;
+}
+
+nav {
+    height: 80px;
+    line-height: 80px;
+    display: inline-block;
+    color: black;
+    padding: 0 4rem;
+    margin: 0 1rem;
+    font-size: 16px;
+    transition: all 0.2s;
+    text-decoration: none;
+    font-weight: bold;
+    background: #FF4500;
+    width: 500px;
+    position: relative;
+    border-radius: 7px;
+}
+nav > .menu {
+    list-style: none;
+    padding: 0;
+}
+nav > .menu > li {
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+}
+nav > .menu > li > a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+}
+nav > .menu > li.hasSub > ul.submenu {
+    margin-top: 10px;
+    background: #f4f4f4;
+    padding: 0;
+    display: none;
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    min-width: 200px;
+    border-radius: 7px;
+}
+nav > .menu > li.hasSub > ul.submenu > li {
+    font-size: 12px;
+    display: inline-block;
+    width: calc(100% / 2 - 0.01px);
+}
+
+nav > .menu > li.hasSub > ul.submenu > li > a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+
+}
+nav > .menu > li.hasSub:hover > ul.submenu {
+    display: inline-block;
+    font-size:0px;
+}
