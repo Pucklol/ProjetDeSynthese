@@ -1,9 +1,17 @@
 <?php
-// bootstrap.php
+
 use Doctrine\ORM\Tools\Console\ConsoleRunner;
+use FastFood\Application;
+use FastFood\Config\Config;
 
-require_once "vendor/autoload.php";
+require_once __DIR__ .'/vendor/autoload.php';
 
-$em = include_once dirname(__FILE__) . '/bootstrap.php';
+$config = new Config();
+$config->load(__DIR__ . '/config');
 
-return ConsoleRunner::createHelperSet($em);
+$app = new Application();
+$app->setConfig($config);
+
+$app->init(false);
+
+return ConsoleRunner::createHelperSet($app->getDatabase()->getEntityManager());

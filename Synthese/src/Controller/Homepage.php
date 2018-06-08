@@ -1,13 +1,14 @@
 <?php
 namespace FastFood\Controller;
 
+use FastFood\Application;
+
 class Homepage extends AbstractController
 {
-    public function __invoke()
+    public function __invoke(Application $app)
     {
-        $this->render('homepage.twig.html', [
+       return $this->render('home/index.html.twig', [
             'name' => 'Boris'
         ]);
-        // TODO: Implement __invoke() method.
     }
 }
