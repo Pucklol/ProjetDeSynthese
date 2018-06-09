@@ -97,7 +97,11 @@ nav {
     vertical-align: top;
 }
 
+nav {
+    margin:auto;
+}
 nav > .menu {
+    margin:auto;
     list-style: none;
     padding: 0;
 }
@@ -123,6 +127,7 @@ nav > .menu > li.hasSub > ul.submenu {
     left: 0;
     min-width: 200px;
     border-radius: 7px;
+
 }
 nav > .menu > li.hasSub > ul.submenu > li {
     font-size: 12px;

@@ -8,3 +8,4 @@
 
 include("menu.html");
 include("corps.html");
+include("footer.html");
