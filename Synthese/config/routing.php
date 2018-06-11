@@ -1,6 +1,7 @@
 <?php
 
 use FastFood\Controller\Homepage;
+use FastFood\Controller\Login;
 
 return [
     '/' => [
@@ -8,10 +9,8 @@ return [
         'methods' => ['GET']
     ],
 
-    /*
-     '/menus' => [
-        'handler' => MenuList::class,
-        'methods' => ['GET']
+     '/login' => [
+        'handler' => Login::class,
+        'methods' => ['GET', 'POST']
     ]
-    */
 ];

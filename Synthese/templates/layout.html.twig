@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurant</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=latin-ext" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet" >
+    <link href="/css/styleProj.css" rel="stylesheet" >
+</head>
+<body>
+{% block menu %}
+    <div class="container-fluid">
+        {% include 'menu.html.twig' %}
+    </div>
+{% endblock%}
+
+{% block body %}
+    <div class="container-fluid">
+        <div class="corp">
+            {% block content %}{% endblock %}
+        </div>
+    </div>
+{% endblock%}
+</body>
+</html>
