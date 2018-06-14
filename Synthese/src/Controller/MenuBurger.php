@@ -1,7 +1,20 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Schar
- * Date: 14/06/2018
- * Time: 18:24
- */
+namespace FastFood\Controller;
+
+use FastFood\Application;
+
+class MenuBurger extends AbstractController{
+
+    public function __invoke(Application $application)
+    {
+        //$em = $application->getDatabase()->getEntityManager();
+
+
+        return $this->render('users/menuburger.html.twig', [
+            'name' => 'Boris'
+        ]);
+
+    }
+
+
+}

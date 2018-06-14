@@ -12,5 +12,9 @@ return [
      '/login' => [
         'handler' => Login::class,
         'methods' => ['GET', 'POST']
-    ]
+    ],
+        '/menuburger' => [
+        'handler' => MenuBurger::class,
+        'methods' =>['GET']
+    ],
 ];
