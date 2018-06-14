@@ -1,5 +1,6 @@
 body {
     font-size: medium;
+    font-family: roboto;
 }
 .corp{
     background-color: #f9f9f9;
@@ -106,6 +107,7 @@ nav > .menu {
     list-style: none;
     padding: 0;
 }
+
 nav > .menu > li {
     list-style: none;
     display: inline-block;
@@ -117,7 +119,7 @@ nav > .menu > li > a {
     margin: 0 10px;
 }
 nav > .menu > li.hasSub > ul.submenu {
-    margin-top: 10px;
+    margin: 1px;
     background: #f4f4f4;
     padding: 0;
     display: none;
@@ -150,3 +152,65 @@ nav > .menu > li.hasSub:hover > ul.submenu {
     display: inline-block;
 
 }
+
+footer{
+    height: 80px;
+    background-color: #FF4500;
+    text-align: center;
+    border-radius: 7px;
+    width: 60%;
+    z-index: 1;
+    position:absolute;
+    bottom:0px;
+    margin-left: 20%;
+
+}
+
+footer>div>ul.ulFoot{
+    list-style:none;
+    margin-left:0;
+    padding-left:0;
+
+
+
+}
+
+li.Tabfoot{
+    font-weight: bold;
+    color:black;
+    margin-left:17%;
+    margin-top: 2%;
+    margin-right: 0px;
+    float:left;
+    text-shadow: 2px 2px 8px black;
+}
+li.TabGlyph{
+    margin-right: 0%;
+    float: left;
+
+}
+li.Nomfoot {
+    font-weight: bold;
+    color: black;
+    text-shadow: 2px 2px 5px black;
+    margin-top: 1.5%;
+}
+footer > li > a{
+    color:black;
+    text-decoration: none;
+
+}
+
+li>a
+{
+    color: Black;
+    text-decoration: none;
+    transition: 0.2s;
+}
+li>a:hover{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+
+}
+

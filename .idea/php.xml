@@ -1,4 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/Synthese/vendor/composer" />
+      <path value="$PROJECT_DIR$/Synthese/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/Synthese/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/Synthese/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/Synthese/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/Synthese/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/Synthese/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/Synthese/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/Synthese/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/Synthese/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/Synthese/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/Synthese/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/Synthese/vendor/nikic/fast-route" />
+      <path value="$PROJECT_DIR$/Synthese/vendor/twig/twig" />
+    </include_path>
+  </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />
 </project>

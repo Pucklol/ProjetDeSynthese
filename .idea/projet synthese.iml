@@ -3,6 +3,20 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/Synthese/src" isTestSource="false" packagePrefix="FastFood\" />
+      <excludeFolder url="file://$MODULE_DIR$/Synthese/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/Synthese/vendor/doctrine/annotations" />
+      <excludeFolder url="file://$MODULE_DIR$/Synthese/vendor/doctrine/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/Synthese/vendor/doctrine/collections" />
+      <excludeFolder url="file://$MODULE_DIR$/Synthese/vendor/doctrine/common" />
+      <excludeFolder url="file://$MODULE_DIR$/Synthese/vendor/doctrine/dbal" />
+      <excludeFolder url="file://$MODULE_DIR$/Synthese/vendor/doctrine/inflector" />
+      <excludeFolder url="file://$MODULE_DIR$/Synthese/vendor/doctrine/instantiator" />
+      <excludeFolder url="file://$MODULE_DIR$/Synthese/vendor/doctrine/lexer" />
+      <excludeFolder url="file://$MODULE_DIR$/Synthese/vendor/doctrine/orm" />
+      <excludeFolder url="file://$MODULE_DIR$/Synthese/vendor/nikic/fast-route" />
+      <excludeFolder url="file://$MODULE_DIR$/Synthese/vendor/symfony/console" />
+      <excludeFolder url="file://$MODULE_DIR$/Synthese/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/Synthese/vendor/twig/twig" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
