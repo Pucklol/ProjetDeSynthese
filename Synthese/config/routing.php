@@ -2,6 +2,7 @@
 
 use FastFood\Controller\Homepage;
 use FastFood\Controller\Login;
+use FastFood\Controller\MenuBurger;
 
 return [
     '/' => [
