@@ -22,7 +22,7 @@ class Login extends AbstractController
       ]);
 
       if ($user instanceof User) {
-        $_SESSION['user'] = $user;
+        $_SESSION['user'] = serialize($user);
 
         header('Location: /');
         die;

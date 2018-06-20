@@ -1,0 +1,45 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+    <h1>Votre panier</h1>
+
+    <div class="text-right">
+        <p>
+            <a href="/cart?erase">Vider</a>
+        </p>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Prix</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {% set total=0 %}
+                {% for menu in app.cart %}
+                    {% set total=menu.price + total %}
+
+                    <tr>
+                        <td>{{ menu.menuName }}</td>
+                        <td>{{ menu.price }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        {% if total > 0 %}
+            <div class="text-right" style="color: red;">
+                <h3>{{ total }}€</h3>
+
+                <p>
+                    <a href="/validate">Valider</a>
+                </p>
+            </div>
+        {% endif %}
+    </div>
+
+{% endblock %}

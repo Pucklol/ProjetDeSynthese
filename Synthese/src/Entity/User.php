@@ -42,6 +42,12 @@ class User extends AbstractEntity
     protected $phone_number;
 
     /**
+     * @Column(type="string", length=100)
+     * @var string
+     **/
+    protected $token;
+
+    /**
      * @OneToOne(targetEntity="Card")
      * @JoinColumn(referencedColumnName="num_card")
      *
@@ -157,6 +163,30 @@ class User extends AbstractEntity
     public function setCard(Card $card): self
     {
         $this->card = $card;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of the property token
+     *
+     * @return string
+     */
+    public function getToken(): string
+    {
+        return $this->token;
+    }
+
+    /**
+     * Set the value of the property token
+     *
+     * @param string $token
+     *
+     * @return $this
+     */
+    public function setToken(string $token): self
+    {
+        $this->token = $token;
 
         return $this;
     }

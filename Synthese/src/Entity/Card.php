@@ -36,6 +36,12 @@ class Card extends AbstractEntity
     protected $printed;
 
     /**
+     * @Column(type="text")
+     * @var string
+     **/
+    protected $content;
+
+    /**
      * Set num_card
      *
      * @param mixed $id
@@ -71,7 +77,7 @@ class Card extends AbstractEntity
      *
      * @return self
      */
-    public function setPrinted(boolean $printed): self
+    public function setPrinted(bool $printed): self
     {
         $this->printed= $printed;
 
@@ -109,4 +115,27 @@ class Card extends AbstractEntity
         return $this->printed;
     }
 
+    /**
+     * Get the value of the property content
+     *
+     * @return string
+     */
+    public function getContent(): string
+    {
+        return $this->content;
+    }
+
+    /**
+     * Set the value of the property content
+     *
+     * @param string $content
+     *
+     * @return $this
+     */
+    public function setContent(string $content): self
+    {
+        $this->content = $content;
+
+        return $this;
+    }
 }

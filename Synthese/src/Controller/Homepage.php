@@ -7,8 +7,6 @@ class Homepage extends AbstractController
 {
     public function __invoke(Application $app)
     {
-       return $this->render('home/index.html.twig', [
-            'name' => 'Boris'
-        ]);
+       return $this->render('home/index.html.twig');
     }
 }

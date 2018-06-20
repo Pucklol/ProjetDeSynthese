@@ -6,7 +6,10 @@ namespace FastFood\Entity;
  */
 trait PriceTrait
 {
-    /** @var float */
+    /**
+     * @var float
+     * @Column(type="float")
+     */
     protected $price;
 
     /**

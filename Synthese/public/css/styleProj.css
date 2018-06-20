@@ -2,6 +2,10 @@ body {
     font-size: medium;
     font-family: roboto;
 }
+
+a {
+    color: #000;
+}
 .corp{
     background-color: #f9f9f9;
     width: 60%;
@@ -112,6 +116,7 @@ nav > .menu > li {
     list-style: none;
     display: inline-block;
     vertical-align: top;
+    margin-right: 20px;
 }
 nav> /
 nav > .menu > li > a {
@@ -148,6 +153,7 @@ nav > .menu > li.hasSub > ul.submenu > li > a {
 nav > .menu > li.hasSub > ul.submenu {
 
     font-size:0px;
+    z-index: 10;
 }
 nav > .menu > li.hasSub:hover > ul.submenu {
     display: inline-block;

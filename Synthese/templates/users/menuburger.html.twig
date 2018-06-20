@@ -1,10 +1,27 @@
 {% extends 'layout.html.twig' %}
 
 {% block content %}
+    <h1>Liste des menus</h1>
 
-        <tr>Liste des menus:
-                <td>{{requete.nom_menu  }}</td>
+    <div class="row">
+        {% for menu in menus %}
+            <div class="col-lg-3">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h3 class="card-title">{{ menu.menuName }}</h3>
 
-        </tr>
+                        {% if app.user is not null %}
+                            {% set link="/order?menuId=" %}
+                        {% else %}
+                            {% set link="/login" %}
+                        {% endif %}
+                        <a href="{{ link ~ menu.id }}" class="card-link">
+                            Commander ({{ menu.price }} € )
+                        </a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
 
 {% endblock %}

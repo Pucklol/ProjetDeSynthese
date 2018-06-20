@@ -40,14 +40,14 @@ class Menu
     protected $menu_name;
 
     /**
-     * @Column(type="boolean")
+     * @Column(type="boolean", nullable=true)
      * @var boolean
      **/
     protected $promotion;
 
 
     /**
-     * @Column(type="boolean")
+     * @Column(type="boolean", nullable=true)
      * @var boolean
      **/
     protected $restriction;

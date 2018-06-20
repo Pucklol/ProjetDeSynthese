@@ -1,8 +1,17 @@
-<header>
+<header  style="position: relative">
     <nav class="navMenu">
+        <div class="pull-right" style="position: absolute; right: 0">
+            <ul class="menu" style="list-style-type: none">
+                <li>
+                    <a href="/cart" class="glyphicon glyphicon-shopping-cart"> ({{ app.cart|length }})</a>
+                </li>
+            </ul>
+        </div>
         <ul class="menu">
             <li>
-                <a href="/">Home</a>
+                <div class="hasSub">
+                    <a href="/">Home</a>
+                </div>
             </li>
             <li class="hasSub">
                 <a href="#">Nos Menus</a>
@@ -41,8 +50,19 @@
                     </li>
                 </ul>
             </li>
+
+            {% if app.user is not null %}
+                <li class="hasSub">
+                    <a href="/card">Ma carte</a>
+                </li>
+            {% endif %}
+
             <li class="hasSub">
-                <a href="/login">Connexion</a>
+                {% if app.user is not null %}
+                    <a href="/logout">Déconnexion</a>
+                {% else %}
+                    <a href="/login">Connexion</a>
+                {% endif %}
             </li>
         </ul>
     </nav>

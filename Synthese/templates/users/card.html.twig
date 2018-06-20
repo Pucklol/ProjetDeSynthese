@@ -1,0 +1,17 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+
+    {% if card %}
+        <div class="row">
+            <div class="col-lg-12">
+                <img src="/qrcode" alt="qrcode" style="margin-bottom: 20px;">
+            </div>
+        </div>
+    {% else %}
+        <div>
+            <a href="/card?ask">Demander une carte</a>
+        </div>
+    {% endif %}
+
+{% endblock %}
